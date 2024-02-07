@@ -19,7 +19,7 @@ CodeBehind="adminbookinventory.aspx.cs" Inherits="WebApplication1.adminbookinven
                   <div class="row">
                      <div class="col">
                         <center>
-                           <img width="100px" src="imgs/books.png" />
+                           <img width="100px" src="images/books.png" />
                         </center>
                      </div>
                   </div>

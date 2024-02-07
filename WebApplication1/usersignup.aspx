@@ -177,7 +177,7 @@
 
 
                              <div class="form-group mb-3">
-                                <a href="usersignup.aspx">  <asp:Button class="btn btn-primary w-100 btn-lg" ID="Button2" runat="server" Text="Sign Up" />
+                                <a href="usersignup.aspx">  <asp:Button class="btn btn-primary w-100 btn-lg" ID="Button2" runat="server" Text="Sign Up" OnClick="Button2_Click" />
                              </div> 
 
 
