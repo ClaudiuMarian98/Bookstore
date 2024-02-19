@@ -71,7 +71,7 @@
     <Content Include="adminlogin.aspx" />
     <Content Include="authormanagement.aspx" />
     <Content Include="bookinventory.aspx" />
-    <Content Include="bookissuing.aspx" />
+    <Content Include="adminbookissuing.aspx" />
     <Content Include="bootstrap\css\bootstrap.min.css" />
     <Content Include="bootstrap\js\bootstrap.min.js" />
     <Content Include="bootstrap\js\jquery-3.7.1.slim.min.js" />
@@ -2173,6 +2173,7 @@
     <Content Include="usermanagement.aspx" />
     <Content Include="userprofile.aspx" />
     <Content Include="usersignup.aspx" />
+    <Content Include="viewbooks.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
   </ItemGroup>
@@ -2205,12 +2206,12 @@
     <Compile Include="bookinventory.aspx.designer.cs">
       <DependentUpon>bookinventory.aspx</DependentUpon>
     </Compile>
-    <Compile Include="bookissuing.aspx.cs">
-      <DependentUpon>bookissuing.aspx</DependentUpon>
+    <Compile Include="adminbookissuing.aspx.cs">
+      <DependentUpon>adminbookissuing.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="bookissuing.aspx.designer.cs">
-      <DependentUpon>bookissuing.aspx</DependentUpon>
+    <Compile Include="adminbookissuing.aspx.designer.cs">
+      <DependentUpon>adminbookissuing.aspx</DependentUpon>
     </Compile>
     <Compile Include="homepage.aspx.cs">
       <DependentUpon>homepage.aspx</DependentUpon>
@@ -2261,6 +2262,13 @@
     </Compile>
     <Compile Include="usersignup.aspx.designer.cs">
       <DependentUpon>usersignup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="viewbooks.aspx.cs">
+      <DependentUpon>viewbooks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="viewbooks.aspx.designer.cs">
+      <DependentUpon>viewbooks.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
@@ -2333,7 +2341,9 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="book_inventory\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

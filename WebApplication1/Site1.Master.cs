@@ -41,7 +41,7 @@ namespace WebApplication1
                     LinkButton12.Visible = false;//  publisher management link button
                     LinkButton8.Visible = false;//  book inventory link button
                     LinkButton9.Visible = false;//  book issuing link button
-                
+                    LinkButton10.Visible = false;
 
                 }
                 else if (Session["role"].Equals("admin"))
@@ -57,6 +57,7 @@ namespace WebApplication1
                     LinkButton12.Visible = true;//  publisher management link button
                     LinkButton8.Visible = true;//  book inventory link button
                     LinkButton9.Visible = true;//  book issuing link button
+                    LinkButton10.Visible = true; 
 
 
                 }
@@ -92,7 +93,7 @@ namespace WebApplication1
 
         protected void LinkButton9_Click(object sender, EventArgs e)
         {
-            Response.Redirect("bookissuing.aspx");
+            Response.Redirect("adminbookissuing.aspx");
         }
 
         protected void LinkButton10_Click(object sender, EventArgs e)
@@ -102,7 +103,7 @@ namespace WebApplication1
 
         protected void LinkButton4_Click(object sender, EventArgs e)
         {
-            Response.Redirect("bookinventory.aspx");
+            Response.Redirect("viewbooks.aspx");
         }
 
         protected void LinkButton1_Click(object sender, EventArgs e)
@@ -136,6 +137,11 @@ namespace WebApplication1
 
 
             Response.Redirect("homepage.aspx");
+        }
+
+        protected void LinkButton7_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("userprofile.aspx");
         }
     }
 }
